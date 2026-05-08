@@ -1,0 +1,20 @@
+http://localhost:3000/product?ref=abc123&product_id=p123
+http://localhost:3000/product?ref=1d74ead4&product_id=69faa302f3a81b2f14fb15bf
+http://localhost:3000/product?ref=34c6608c&product_id=69faa302f3a81b2f14fb15bf
+  return (
+    
+ <div className="flex min-h-screen bg-white">
+    
+  {/* Sidebar is fixed to the viewport height */}
+  <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+  
+  {/* Main content area scrolls independently */}
+  <main className="flex-1 flex flex-col bg-slate-50/50">
+    <div className="p-8 grow">
+      {renderContent()}
+    </div>
+    {/* Global Footer stays at the bottom of the content area */}
+    
+  </main>
+</div>
+  );
