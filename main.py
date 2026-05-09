@@ -28,7 +28,71 @@ app.add_middleware(
 SECRET_KEY ="IamBhumidharDoley123@atKazirangaUniversityStudying"
 
 
-
+new_products = [
+    {
+        "name": "Apple iPhone 15 Pro",
+        "category": "Mobiles",
+        "price": "134900",
+        "commission": "3"
+    },
+    {
+        "name": "Sony WH-1000XM5 Wireless Headphones",
+        "category": "Audio",
+        "price": "29990",
+        "commission": "8"
+    },
+    {
+        "name": "MacBook Air M2 13-inch",
+        "category": "Electronics",
+        "price": "114900",
+        "commission": "5"
+    },
+    {
+        "name": "Levi's 511 Slim Fit Jeans",
+        "category": "Fashion",
+        "price": "3499",
+        "commission": "12"
+    },
+    {
+        "name": "Samsung Galaxy S24 Ultra",
+        "category": "Mobiles",
+        "price": "129999",
+        "commission": "4"
+    },
+    {
+        "name": "Marshall Emberton II Speaker",
+        "category": "Audio",
+        "price": "14999",
+        "commission": "10"
+    },
+    {
+        "name": "Logitech MX Master 3S Mouse",
+        "category": "Accessories",
+        "price": "10995",
+        "commission": "7"
+    },
+    {
+        "name": "Ray-Ban Aviator Classic",
+        "category": "Fashion",
+        "price": "12490",
+        "commission": "15"
+    },
+    {
+        "name": "Dell UltraSharp 27 Monitor",
+        "category": "Electronics",
+        "price": "45000",
+        "commission": "6"
+    },
+    {
+        "name": "Apple Watch Series 9",
+        "category": "Accessories",
+        "price": "41900",
+        "commission": "5"
+    }
+]
+# This will insert all 10 products at once
+result = products_collection.insert_many(new_products)
+print(f"Successfully inserted {len(result.inserted_ids)} products.")
 
 
 
